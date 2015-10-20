@@ -1,0 +1,8 @@
+#! /bin/csh
+#BSUB -a openmp
+#BSUB -n 20
+#BSUB -R "span[ptile=20]"
+#BSUB -J yuan
+
+./yuan >out.dat 
+
